@@ -7,60 +7,41 @@
 
 import UIKit
 
-class ReusbaleCollectionViewController: UIViewController{
+class ReusbaleCollectionViewController:   UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
 
+    let name : [String] = ["Item 1","Item 2","Item 3","Item 1","Item 2","Item 3","Item 1","Item 2","Item 3","Item 1","Item 2","Item 3","Item 1","Item 2","Item 3","Item 1","Item 2","Item 3"]
+    let image : [String] = ["icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2","icon2"]
+
+
+
+    @IBOutlet weak var MyCollection: UICollectionView!
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.name.count
+    }
     
-    var records = [Attendance]()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell3 = MyCollection.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath) as! CollectionViewCell
+            
+            cell3.Imgae.image = UIImage(named: image[indexPath.row])
+            cell3.Label.text = name[indexPath.row]
+            
+                    return cell3
     
-    @IBOutlet weak var MyTable: UITableView!
-    
-    
+        
+        }
     
 //    var type : [String] = ["One","Two","Three"]
 //    var time : [String] = ["12:00 PM","01:15 PM","12:15 PM"]
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        self.MyTable.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell2")
-        
-        let day1 = Attendance(TimeIn: "12:00 PM",TimeOut: "9:00 PM");
-        records.append(day1)
-        let day2 = Attendance(TimeIn: "12:20 PM",TimeOut: "9:20 PM");
-        records.append(day2)
-        let day3 = Attendance(TimeIn: "12:10 PM",TimeOut: "9:10 PM");
-        records.append(day3)
-        let day4 = Attendance(TimeIn: "12:05 PM",TimeOut: "9:05 PM");
-        records.append(day4)
-        let day5 = Attendance(TimeIn: "12:15 PM",TimeOut: "9:15 PM");
-        records.append(day5)
-        let day6 = Attendance(TimeIn: "12:25 PM",TimeOut: "9:25 PM");
-        records.append(day6)
-        
-        self.MyTable.delegate = self
-        self.MyTable.dataSource = self
-        
+        self.MyCollection.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell3")
+            
     }
         // Do any additional setup after loading the view.
     }
 
 
-
-extension  ReusbaleCollectionViewController:   UITableViewDataSource, UITableViewDelegate{
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return self.records.count
-        }
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            if let cell2 = (MyTable.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as? TableViewCell){
-                
-                cell2.timein.text = records[indexPath.row].TimeIn
-                        cell2.timeout.text = records[indexPath.row].TimeOut
-                
-                        return cell2
-            }
-    
-    return UITableViewCell()
-        }
-    
-    }
 
