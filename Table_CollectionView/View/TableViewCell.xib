@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="60" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Table_CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l77-oN-4Kx">
+                        <rect key="frame" x="155" y="15" width="51.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSW-0Y-yv7">
+                        <rect key="frame" x="243" y="15" width="62" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-rv-7D7">
+                        <rect key="frame" x="155" y="31" width="49.5" height="13.5"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-Sb-Umz">
+                        <rect key="frame" x="244" y="31" width="49.5" height="13.5"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28 Dec 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaV-NI-Prr">
+                        <rect key="frame" x="40" y="17" width="85" height="24"/>
+                        <color key="backgroundColor" red="1" green="0.6797352753" blue="0.38485171550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="dbG-p8-UR4"/>
+                            <constraint firstAttribute="height" constant="24" id="w2r-CF-xz2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" systemColor="systemGray6Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Erb-Sb-Umz" firstAttribute="top" secondItem="XSW-0Y-yv7" secondAttribute="bottom" constant="1.5" id="0t1-DW-K4Y"/>
+                    <constraint firstItem="XSW-0Y-yv7" firstAttribute="leading" secondItem="l77-oN-4Kx" secondAttribute="trailing" constant="36.5" id="50y-vH-HdQ"/>
+                    <constraint firstItem="JaV-NI-Prr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="8lH-Gw-tm0"/>
+                    <constraint firstItem="l77-oN-4Kx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Adm-g5-RPu"/>
+                    <constraint firstItem="Ogf-rv-7D7" firstAttribute="top" secondItem="l77-oN-4Kx" secondAttribute="bottom" constant="1.5" id="Cto-5f-a4h"/>
+                    <constraint firstItem="JaV-NI-Prr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="E8i-ip-EXZ"/>
+                    <constraint firstItem="Erb-Sb-Umz" firstAttribute="leading" secondItem="Ogf-rv-7D7" secondAttribute="trailing" constant="39.5" id="GwY-VW-yIG"/>
+                    <constraint firstItem="JaV-NI-Prr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hUp-nH-5Dd"/>
+                    <constraint firstAttribute="bottom" secondItem="JaV-NI-Prr" secondAttribute="bottom" constant="17" id="iT0-Ym-ymI"/>
+                    <constraint firstItem="XSW-0Y-yv7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="lpK-66-hVi"/>
+                    <constraint firstItem="Ogf-rv-7D7" firstAttribute="leading" secondItem="JaV-NI-Prr" secondAttribute="trailing" constant="30" id="ncq-CC-Yll"/>
+                    <constraint firstItem="l77-oN-4Kx" firstAttribute="leading" secondItem="JaV-NI-Prr" secondAttribute="trailing" constant="30" id="z6T-OQ-zz4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="date" destination="JaV-NI-Prr" id="rSu-nd-iK7"/>
+                <outlet property="timein" destination="Ogf-rv-7D7" id="X33-1e-7or"/>
+                <outlet property="timeout" destination="Erb-Sb-Umz" id="gyl-Zl-wra"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="77.008928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

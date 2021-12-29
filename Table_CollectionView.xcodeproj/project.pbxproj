@@ -20,6 +20,9 @@
 		79E5936F277B3626006A9C4A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5936E277B3626006A9C4A /* MyTableViewCell.swift */; };
 		79E59377277B56F3006A9C4A /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E59376277B56F3006A9C4A /* MyCollectionViewCell.swift */; };
 		79E59379277B578F006A9C4A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E59378277B578F006A9C4A /* CollectionViewController.swift */; };
+		79E5937D277C4E64006A9C4A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5937B277C4E64006A9C4A /* TableViewCell.swift */; };
+		79E5937E277C4E64006A9C4A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E5937C277C4E64006A9C4A /* TableViewCell.xib */; };
+		79E59380277C53D9006A9C4A /* ReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5937F277C53D9006A9C4A /* ReusableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		79E5936E277B3626006A9C4A /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		79E59376277B56F3006A9C4A /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		79E59378277B578F006A9C4A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		79E5937B277C4E64006A9C4A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		79E5937C277C4E64006A9C4A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		79E5937F277C53D9006A9C4A /* ReusableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		79E5933B277B2456006A9C4A /* Table_CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				79E5937A277C4E46006A9C4A /* View */,
 				79E5933C277B2456006A9C4A /* AppDelegate.swift */,
 				79E5933E277B2456006A9C4A /* SceneDelegate.swift */,
 				79E59340277B2456006A9C4A /* ViewController.swift */,
@@ -118,6 +125,7 @@
 				79E5936E277B3626006A9C4A /* MyTableViewCell.swift */,
 				79E59376277B56F3006A9C4A /* MyCollectionViewCell.swift */,
 				79E59378277B578F006A9C4A /* CollectionViewController.swift */,
+				79E5937F277C53D9006A9C4A /* ReusableViewController.swift */,
 			);
 			path = Table_CollectionView;
 			sourceTree = "<group>";
@@ -137,6 +145,15 @@
 				79E5935F277B2458006A9C4A /* Table_CollectionViewUITestsLaunchTests.swift */,
 			);
 			path = Table_CollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		79E5937A277C4E46006A9C4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79E5937B277C4E64006A9C4A /* TableViewCell.swift */,
+				79E5937C277C4E64006A9C4A /* TableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E59349277B2458006A9C4A /* LaunchScreen.storyboard in Resources */,
+				79E5937E277C4E64006A9C4A /* TableViewCell.xib in Resources */,
 				79E59346277B2458006A9C4A /* Assets.xcassets in Resources */,
 				79E59344277B2456006A9C4A /* Main.storyboard in Resources */,
 			);
@@ -271,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E59341277B2456006A9C4A /* ViewController.swift in Sources */,
+				79E59380277C53D9006A9C4A /* ReusableViewController.swift in Sources */,
+				79E5937D277C4E64006A9C4A /* TableViewCell.swift in Sources */,
 				79E5933D277B2456006A9C4A /* AppDelegate.swift in Sources */,
 				79E59377277B56F3006A9C4A /* MyCollectionViewCell.swift in Sources */,
 				79E5936D277B326E006A9C4A /* Attendance.swift in Sources */,
