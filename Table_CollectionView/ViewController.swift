@@ -17,13 +17,14 @@ class ViewController: UIViewController{
     
     
     
+    var parser = Parser()
+    var user = [User]()
     
-//    var type : [String] = ["One","Two","Three"]
-//    var time : [String] = ["12:00 PM","01:15 PM","12:15 PM"]
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         
+        parser.parse()
+        //print()
         let day1 = Attendance(TimeIn: "12:00 PM",TimeOut: "9:00 PM");
         records.append(day1)
         let day2 = Attendance(TimeIn: "12:20 PM",TimeOut: "9:20 PM");
@@ -37,7 +38,7 @@ class ViewController: UIViewController{
         let day6 = Attendance(TimeIn: "12:25 PM",TimeOut: "9:25 PM");
         records.append(day6)
         
-        
+        MyTable.dataSource = self
         
     }
         // Do any additional setup after loading the view.
@@ -47,13 +48,13 @@ class ViewController: UIViewController{
 
 extension  ViewController:   UITableViewDataSource, UITableViewDelegate{
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return records.count
+            return user.count
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = MyTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyTableViewCell
     
-            cell.TimeIn.text = records[indexPath.row].TimeIn
-            cell.TimeOut.text = records[indexPath.row].TimeOut
+            cell.TimeIn.text = user[indexPath.row].name
+            cell.TimeOut.text = user[indexPath.row].city
     
             return cell
     

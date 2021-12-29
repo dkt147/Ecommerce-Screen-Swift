@@ -32,8 +32,6 @@ class ReusbaleCollectionViewController:   UIViewController, UICollectionViewDele
         
         }
     
-//    var type : [String] = ["One","Two","Three"]
-//    var time : [String] = ["12:00 PM","01:15 PM","12:15 PM"]
     override func viewDidLoad() {
         super.viewDidLoad()
       

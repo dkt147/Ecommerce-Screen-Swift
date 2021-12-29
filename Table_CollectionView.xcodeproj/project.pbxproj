@@ -10,6 +10,8 @@
 		799A9493277C56D100FE219A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A9491277C56D100FE219A /* CollectionViewCell.swift */; };
 		799A9494277C56D100FE219A /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799A9492277C56D100FE219A /* CollectionViewCell.xib */; };
 		799A9496277C59A100FE219A /* ReusbaleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A9495277C59A100FE219A /* ReusbaleCollectionViewController.swift */; };
+		799A949A277C74CE00FE219A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A9499277C74CE00FE219A /* Parser.swift */; };
+		799A949C277C75DD00FE219A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A949B277C75DD00FE219A /* User.swift */; };
 		79E5933D277B2456006A9C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5933C277B2456006A9C4A /* AppDelegate.swift */; };
 		79E5933F277B2456006A9C4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5933E277B2456006A9C4A /* SceneDelegate.swift */; };
 		79E59341277B2456006A9C4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E59340277B2456006A9C4A /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 		799A9491277C56D100FE219A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		799A9492277C56D100FE219A /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		799A9495277C59A100FE219A /* ReusbaleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusbaleCollectionViewController.swift; sourceTree = "<group>"; };
+		799A9499277C74CE00FE219A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		799A949B277C75DD00FE219A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		79E59339277B2456006A9C4A /* Table_CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Table_CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E5933C277B2456006A9C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E5933E277B2456006A9C4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,22 @@
 			path = Collections;
 			sourceTree = "<group>";
 		};
+		799A9497277C749C00FE219A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				799A949B277C75DD00FE219A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		799A9498277C74A300FE219A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				799A9499277C74CE00FE219A /* Parser.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		79E59330277B2456006A9C4A = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +157,8 @@
 		79E5933B277B2456006A9C4A /* Table_CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				799A9498277C74A300FE219A /* ViewModel */,
+				799A9497277C749C00FE219A /* Model */,
 				79E5937A277C4E46006A9C4A /* View */,
 				79E5933C277B2456006A9C4A /* AppDelegate.swift */,
 				79E5933E277B2456006A9C4A /* SceneDelegate.swift */,
@@ -314,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799A949C277C75DD00FE219A /* User.swift in Sources */,
 				799A9493277C56D100FE219A /* CollectionViewCell.swift in Sources */,
 				79E59341277B2456006A9C4A /* ViewController.swift in Sources */,
 				799A9496277C59A100FE219A /* ReusbaleCollectionViewController.swift in Sources */,
@@ -322,6 +345,7 @@
 				79E5933D277B2456006A9C4A /* AppDelegate.swift in Sources */,
 				79E59377277B56F3006A9C4A /* MyCollectionViewCell.swift in Sources */,
 				79E5936D277B326E006A9C4A /* Attendance.swift in Sources */,
+				799A949A277C74CE00FE219A /* Parser.swift in Sources */,
 				79E59379277B578F006A9C4A /* CollectionViewController.swift in Sources */,
 				79E5936F277B3626006A9C4A /* MyTableViewCell.swift in Sources */,
 				79E5933F277B2456006A9C4A /* SceneDelegate.swift in Sources */,
