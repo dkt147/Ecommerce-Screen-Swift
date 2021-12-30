@@ -9,6 +9,8 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    
+    //Outlet of button on table
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var timein: UILabel!
     @IBOutlet weak var timeout: UILabel!
