@@ -16,6 +16,8 @@ class TableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        
+        //Giving corners to table view button
         date.layer.masksToBounds = true
         date.layer.cornerRadius = 5
     }
