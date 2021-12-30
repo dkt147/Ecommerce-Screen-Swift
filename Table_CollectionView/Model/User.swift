@@ -6,13 +6,3 @@
 //
 
 import Foundation
-
-struct Welcome : Codable{
-    let users : [User]
-}
-
-
-
-struct User : Codable{
-    let name , city : String
-}
