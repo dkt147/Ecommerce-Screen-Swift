@@ -12,6 +12,8 @@ class TableViewCell: UITableViewCell {
     
     //Outlet of button on table
     @IBOutlet weak var date: UILabel!
+    
+    //Outlet of labels on table view cell
     @IBOutlet weak var timein: UILabel!
     @IBOutlet weak var timeout: UILabel!
     override func awakeFromNib() {
