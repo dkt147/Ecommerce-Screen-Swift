@@ -226,13 +226,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vem-iE-KCX" userLabel="Foot">
-                                                    <rect key="frame" x="188" y="30" width="38.5" height="13.5"/>
+                                                    <rect key="frame" x="188" y="30" width="38" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.61381035049999999" green="0.61381035049999999" blue="0.61381035049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-9C-q5K" userLabel="Foot">
-                                                    <rect key="frame" x="297" y="30" width="48" height="13.5"/>
+                                                    <rect key="frame" x="296.5" y="30" width="48.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.61381035049999999" green="0.61381035049999999" blue="0.61381035049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -240,9 +240,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RXy-q4-9F7" firstAttribute="leading" secondItem="xB7-cU-ceH" secondAttribute="trailing" constant="52" id="BLc-9j-ywC"/>
+                                                <constraint firstItem="vem-iE-KCX" firstAttribute="centerX" secondItem="ks4-XO-xNP" secondAttribute="centerX" id="Dh3-Ir-zWO"/>
                                                 <constraint firstItem="7eJ-9C-q5K" firstAttribute="top" secondItem="ks4-XO-xNP" secondAttribute="topMargin" constant="19" id="FFJ-5d-iRA"/>
                                                 <constraint firstItem="vem-iE-KCX" firstAttribute="leading" secondItem="xyP-5e-CBb" secondAttribute="trailing" constant="42" id="Jom-fY-Ck8"/>
-                                                <constraint firstItem="xyP-5e-CBb" firstAttribute="leading" secondItem="ks4-XO-xNP" secondAttribute="leadingMargin" id="N7J-ai-8Sg"/>
+                                                <constraint firstItem="xyP-5e-CBb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ks4-XO-xNP" secondAttribute="leadingMargin" id="N7J-ai-8Sg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7eJ-9C-q5K" secondAttribute="trailing" constant="49" id="bbr-oi-zTc"/>
                                                 <constraint firstItem="7eJ-9C-q5K" firstAttribute="leading" secondItem="vem-iE-KCX" secondAttribute="trailing" constant="70.5" id="gq2-eL-ueY"/>
                                                 <constraint firstItem="vem-iE-KCX" firstAttribute="top" secondItem="ks4-XO-xNP" secondAttribute="topMargin" constant="19" id="onX-C6-mvb"/>
                                                 <constraint firstItem="RXy-q4-9F7" firstAttribute="top" secondItem="ks4-XO-xNP" secondAttribute="topMargin" constant="3" id="sM3-R9-D0I"/>
